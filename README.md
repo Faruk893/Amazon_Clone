@@ -1,2 +1,2 @@
 # Amazon-Clone
-# Amazon_Clone
+Amazon Sitesi
