@@ -1,0 +1,264 @@
+/* * Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Css Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  border: none;
+  outline: none;
+  text-decoration: none;
+}
+
+/* Global Styles */
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.border {
+  border: 1px solid transparent;
+  height: 100%;
+  cursor: pointer;
+  padding: 10px;
+  transition: 1s ;
+}
+.border:hover {
+  border: 1px solid white;
+}
+
+/* Header */
+#header {
+  background-color: #0f1111;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+#header .logo {
+  height: 50px;
+  width: 100px;
+}
+
+#header .logo img {
+  width: 100%;
+  height: 100%;
+}
+
+#header .adress {
+  display: flex;
+  flex-direction: column;
+}
+#header .adress .top {
+  font-size: 13.6px;
+  color: #cccccc;
+}
+#header .adress .icon {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+#header .adress .icon span {
+  font-size: 15px;
+}
+
+#header .search {
+  display: flex;
+  justify-content: space-evenly;
+  width: 620px;
+  height: 40px;
+}
+#header .search select {
+  background-color: #f3f3f3;
+  text-align: center;
+  border-radius: 4px 0 0 4px;
+  width: 60px;
+}
+#header .search input {
+  width: 100%;
+  padding-left: 10px;
+}
+#header button {
+  width: 45px;
+  height: 100%;
+  background-color: #fabd68;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+#header .nav-item {
+  display: flex;
+  flex-direction: column;
+}
+#header .nav-item .top {
+  color: #cccccc;
+  font-size: 12px;
+}
+
+#header .nav-item .bottom {
+  font-size: 14px;
+  font-weight: 600;
+}
+#header .nav-cart {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+#header .nav-cart i {
+  font-size: 30px;
+}
+#header .nav-cart span {
+  font-weight: bold;
+  font-size: 13px;
+}
+
+/* Panel */
+#panel {
+  background-color: #212f3d;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  height: 40px;
+  white-space: nowrap;
+}
+#panel a {
+  color: white;
+  margin: 0 10px;
+  font-size: 15px;
+}
+#panel .panel-left {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+/* Hero */
+.hero {
+  background-image: url("./images/hero_image.jpg");
+  height: 350px;
+  background-size: cover;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.hero-msg {
+  background-color: white;
+  padding: 10px;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+.hero-msg a {
+  color: #92bdc6;
+}
+
+/* Categories Section */
+.categories-section {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+  flex-wrap: wrap !important;
+  background-color: #e2e7e6;
+}
+
+.categories-section .box {
+  background-color: white;
+  height: 440px;
+  padding: 20px 15px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.categories-section .box h2 {
+  white-space: nowrap;
+  font-size: 20px;
+}
+.categories-section .box img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+/* Footer */
+.footer-top {
+  background-color: #364759;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.footer-top:hover {
+  background-color: #4d5c6b;
+}
+.footer-top a {
+  color: white;
+  font-size: 14px;
+}
+
+.footer-bottom {
+  background-color: #212f3d;
+  color: white;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.footer-bottom .footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 18px;
+}
+.footer-bottom .footer-list li {
+  font-size: 15px;
+  margin: 10px 0;
+}
+/* * Media Queries */
+
+@media (max-width: 1300px) {
+  #header .search {
+    width: 400px;
+  }
+  .panel-links a {
+    display: none;
+  }
+}
+
+@media (max-width: 1100px) {
+  #header .search {
+    width: 300px;
+  }
+}
+
+@media (max-width: 1000px) {
+  #header .adress {
+    display: none;
+  }
+  #header .nav-item {
+    display: none;
+  }
+  #header .search {
+    width: 500px;
+  }
+}
+
+@media (max-width: 650px) {
+  .footer-bottom {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  #header .search {
+    width: 300px;
+  }
+}
