@@ -1,2 +1,2 @@
 # Amazon-Clone
-Amazon Sitesi
+Html, Css ve Javascript Kullanılarak Oluşturulan Bir Amazon Sitesi.
